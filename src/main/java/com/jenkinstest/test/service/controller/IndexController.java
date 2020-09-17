@@ -1,17 +1,17 @@
 package com.jenkinstest.test.service.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: Meng
  * @Date: 2020/9/17 16:35
  */
-@RestController("index")
+@RestController
+@RequestMapping("/index")
 public class IndexController {
 
-	@GetMapping
+	@RequestMapping
 	public String indexController(){
 
 		return "index.html";
